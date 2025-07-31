@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Quran Viewer</title>
+    <link rel="stylesheet" href="al-quran.css">
+</head>
+
+<body>
+    <header>
+        <div class="scroll-animate" data-animate="fadeInUp">
+            <h1 class="h1">IslamiVerse</h1>
+            <img class="atas" src="atas.png" alt="Gambar Header">
+            </section>
+        </div>
+    </header>
+    <section class="con">
+        <div class="box">
+            <img src="beranda.png" alt="">
+            <h3><a href="../index.html">Beranda</a></h3>
+        </div>
+        <div class="box">
+            <img src="logo2.png" alt="">
+            <h3><a href="#abot">About Us</a></h3>
+        </div>
+        <div class="box">
+            <img src="ikon.png" alt="">
+            <h3><a href="#quran">List Surah</a></h3>
+        </div>
+        <div class="box">
+            <img src="beranda.png" alt="">
+            <h3><a href="../Doa/doa.html">Doa-Doa</a></h3>
+        </div>
+    </section>
+  
+    <div class="about" id="abot">
+        <div class="video-container animate-in">
+            <video class="video" src="video.mp4" muted loop autoplay>Video</video>
+        </div>
+        <div class="conten animate-out">
+            <h3>IslamiVers, Al - Qur'an Version</h3>
+            <p>
+                Selamat datang di Al-Quran Viewer versi dari pengembangan web IslamiVerse! Kami hadir dengan tujuan
+                memberikan pengalaman modern dan mudah diakses untuk menjelajahi Al-Quran.</p>
+            <p>Al-Quran adalah petunjuk hidup bagi setiap orang yang mencari pengetahuan dan kebijaksanaan. Melalui
+                platform ini, kami ingin memudahkan Anda dalam memahami dan merenungkan ayat-ayat suci Al-Quran.</p>
+            <p>Kami berkomitmen untuk menyediakan sumber daya Islami berkualitas tinggi dengan fitur pemilihan surah,
+                teks Arab, terjemahan, dan audio bacaan Al-Quran. Dengan antarmuka yang ramah pengguna, kami harap Anda
+                merasa terinspirasi untuk terus belajar dan mendalami makna Al-Quran.
+                Terima kasih telah bergabung dengan IslamiVerse. Mari bersama-sama meningkatkan pemahaman kita terhadap
+                pesan-pesan suci Al-Quran.</p>
+            <button class="button"><a href="Al-Quran.html" class="btn">Refresh</a></button>
+        </div>
+    </div>
+    <div class="container">
+
+        <select id="quran">
+            <option value="">Pilih Surah</option>
+        </select>
+        <div class="surah-list"></div>
+        <div class="verses">
+
+        </div>
+
+        <script src="al-qur'an.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+/* al-quran.css */
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Righteous&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap');
+
+@font-face {
+    font-family: 'LPMQ';
+    src: url('https://kangismet.github.io/fonts/lpmq.eot');
+    src: url('https://kangismet.github.io/fonts/lpmq.eot?#iefix') format('embedded-opentype'),
+        url('https://kangismet.github.io/fonts/lpmq.ttf') format('truetype');
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #04507d, #0a4e8d);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+.atas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+.h1 {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    transform: translateY(-50%);
+    font-size: clamp(40px, 6vw, 80px);
+    font-family: 'rowdies', cursive;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #701616;
+    z-index: 2;
+}
+
+/* Navigation Menu */
+.con {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    background: #3f2203;
+    justify-items: center;
+}
+.box {
+    padding: 15px;
+    background: linear-gradient(#04789e, transparent);
+    border-radius: 1.5rem;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.box:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #45c6f0, transparent);
+}
+.box a {
+    color: rgb(227, 209, 209);
+    text-decoration: none;
+    font-family: 'satisfy', cursive;
+    font-size: 1.1rem;
+}
+.box img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* About Us Section */
+.about {
+    padding: 50px 5%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 3rem;
+    align-items: center;
+    background-color: #080808;
+}
+.about .video-container {
+    flex: 1 1 400px;
+}
+.video-container .video {
+    width: 100%;
+    border-radius: 20px;
+}
+.conten {
+    flex: 1 1 400px;
+    color: #c86d0c;
+    text-align: left;
+}
+.conten h3 {
+    color: rgb(218, 165, 5);
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive;
+}
+.conten p {
+    font-family: 'Dancing Script', cursive;
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+.button {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(7, 164, 242);
+    border-radius: 20px;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+.button .btn {
+    color: #f2ede6;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #08b2e6;
+}
+
+/* Quran Container */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #0f0e0e url('bg.jpg');
+    background-size: cover;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+#quran {
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-family: 'Righteous', cursive;
+    padding: 10px;
+    background: #023d56;
+    border: none;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Surah List Layout */
+.surah-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+.surah-list .surah {
+    border: 1px solid #204ac8;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.surah-list .surah:hover {
+    transform: translateY(-5px);
+    background-color: rgba(5, 90, 117, 0.7);
+    border-color: #0bf5f5;
+}
+.surah-number {
+    background-color: #055a75;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    flex-shrink: 0;
+}
+.surah-details {
+    text-align: left;
+}
+.surah-name {
+    font-size: 24px;
+    color: #0bf5f5;
+    font-family: 'LPMQ';
+    margin: 0;
+}
+.surah-translation {
+    font-size: 14px;
+    color: #ba7608;
+    font-family: 'Rowdies', cursive;
+    margin: 0;
+}
+
+/* Verses (Ayat) Display */
+.verses {
+    margin-top: 20px;
+}
+.title {
+    background-image: url('border2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+.ayah-container {
+    background: #062d39;
+    padding: 25px;
+    border: 1px solid #701003;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.ayat {
+    font-family: 'LPMQ';
+    color: #fff;
+    font-size: 28px;
+    line-height: 2.2;
+    direction: rtl;
+    text-align: right;
+    margin: 10px 0;
+}
+.ayat-indonesia {
+    font-size: 16px;
+    color: #fbf9f9;
+    font-family: 'Rowdies', cursive;
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+audio {
+    width: 100%;
+    margin-top: 15px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a237e;
+    color: #fff;
+}
+
+/* --- Media Queries --- */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        height: 300px;
+    }
+    .h1 {
+        top: 50%;
+    }
+    .about {
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+    .title {
+        background-image: none;
+        background-color: #023d56;
+        border-radius: 8px;
+    }
+    .title .surah-name, .title .surah-translation, .title .surah-type, .title .num-ayat {
+        color: white;
+    }
+    .ayat { font-size: 24px; }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        height: 200px;
+    }
+    .con {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+    .surah-list {
+        grid-template-columns: 1fr;
+    }
+    .ayat { font-size: 22px; }
+}

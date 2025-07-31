@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doa Harian&Tahlil</title>
+    <link rel="stylesheet" href="doa.css">
+</head>
+<body>
+    <header>        
+        <h1 class="big-title" data-speed="0.1">Do'a Harian & Tahlil</h1>   
+     
+        <div class="image-container">
+            <img src="orang.png" class="person" data-speed="-0.25" alt="">
+            <img src="sky2.jpg" class="mountain2" alt="">
+        </div>
+    </header>
+
+    <section>
+        <div class="shadow"></div>
+
+        <section class="con">
+            <div class="box">
+                <img src="beranda.png" alt="">
+                <h3><a href="../index.html">Beranda</a></h3>
+            </div>
+            <div class="box">
+                <img src="ikon.png" alt="">
+                <h3><a href="#" onclick="displayDoaHarian()">Doa Harian</a></h3>
+            </div>
+            <div class="box">
+                <img src="ikon.png" alt="">
+                <h3><a href="#" onclick="displayDoaTahlil()">Doa Tahlil</a></h3>
+            </div>
+            <div class="box">
+                <img src="beranda.png" alt="">
+                <h3><a href="../aL-qur'an/al-quran.html">AL-Quran</a></h3>
+            </div>
+        </section>
+        <div class="about">
+            <div class="video-container">
+                <video class="video" src="video.mp4" muted loop autoplay>Video</video>
+            </div>
+            <div class="conten">
+                <h3>IslamiVers, Doa-Doa</h3>
+                <p>Selamat datang pada layanan website kedua kami yakni Doa Harian dan Doa Tahlil.</p>
+                <p>Kami Tim IslamiVerse sangaat percaya dengan keajaiban doa, dengan menghadirkan pelayanan ini Semoga doa-doa harian dan tahlil ini menjadi wadah untuk mendekatkan diri kepada Allah SWT serta memberikan hikmah, keberkahan, dan ketenangan bagi kita dalam menghadapi perjalanan hidup ini.</p>
+                <p>Kami akan terus mengembangkan website kami ini sehingga dapat lebih mudah untuk diakses oleh masyarakat dan dapat memberikan banyak manfaat bagi seluruh umat muslim.</p>
+                </div>
+            </div>
+        <main>
+            <div id="searchBox"">
+                <input type="text" id="searchInput" placeholder="Cari Doa Disini">
+                <button onclick="searchDoa()"><img src="ikon2.png" alt="" img>
+                    </button>
+            </div>
+            <div id="doaList"></div>
+            <div id="doaTahlilList"></div>
+            <div id="searchResults"></div>
+        </main>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col" id="titt">
+                <img src="logo2.png" alt="" class="logo">
+                <h2>About Us!</h2>
+                <h6>Islamiverse adalah platform untuk membaca Al-Quran dan doa harian. Temukan kebijaksanaan dan petunjuk hidup dalam ajaran Islam bersama kami. Terima kasih telah bergabung!</h6>
+            </div>
+            <div class="col">
+                <h3>Contact Us<div class="garis"><span></span></div></h3>
+                <p class="kon1"><img src="../image/i.png" alt=""> Jl. Dakota Sukaraja</p>
+                <p class="kon1"><img src="../image/j.png" alt=""> Univ.Nasional Pasim</p>
+                <p class="kon1"><img src="../image/k.png" alt=""> naditia@gmail.com</p>
+                <p class="kon1"><img src="../image/l.png" alt=""> +62 880-955-215-8</p>
+            </div>
+            <div class="col">
+                <h3>Features<div class="garis"><span></span></div></h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Your Advice<div class="garis"><span></span></div></h3>
+                <form class="from">
+                    <input type="email" placeholder="enter your email id">
+                    <br>
+                    <input type="password" placeholder="Enter Your Password">
+                    <br>
+                    <textarea name="" id="" placeholder="Enter Your Advice"></textarea>
+                    <br>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+            <h5>Also Follow Our Social Media</h5>
+            <ul class="social">
+                <li><a href="https://www.facebook.com"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+                <li><a href="https://twitter.com/i/flow/login"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+                <li><a href="https://www.instagram.com/?hl=en"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    </footer>
+
+
+    <script src="doa.js"></script>
+</body>
+</html>
